@@ -1,0 +1,41 @@
+
+li{
+	list-style-type: none;
+}
+
+.root{
+	width: 550px;
+	height: 48px;
+	padding: 5px;
+	margin: 3px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+img, .root{
+	border-radius: 3px; 
+
+}
+
+img{
+	width: 48px;
+	height: 48px;
+
+}
+
+.list_music_inf{
+	padding-top: 5px;
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.list_music_time{
+	position: relative;
+	top: 15px;
+}
+
+.root:hover{
+    background: #d4d4d4;
+}
+

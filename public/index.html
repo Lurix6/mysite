@@ -1,40 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../src/components/style/header.css">
+	<link rel="stylesheet" type="text/css" href="../src/components/style/music.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="block_header">
+			<div class="header">
+				<div class="header_section">
+					<div class="logo">
+						<a href="index.html">LOGO</a>
+					</div>
+					<div class="header_item headerButton"><img src="assets/img/header/earth.png" alt=""></div>
+					<div class="header_item headerButton"><img src="assets/img/header/magnifying-glass-finder.png" alt=""></div>
+					<div class="header_item headerButton"><img src="assets/img/header/friends.png" alt=""></div>
+					<div class="header_item headerButton"><img src="assets/img/header/console.png" alt=""></div>
+					<div class="header_item headerButton"><img src="assets/img/header/star.png" alt=""></div>
+					<div class="header_item headerButton"><img src="assets/img/header/youtube-play-button.png" alt=""></div>
+					<div class="header_item headerButton"><img src="assets/img/header/headphones.png" alt="">
+					</div>
+					
+				</div>
+				
+				<div class="header_section_half">
+					<div><a href="upload_rating.html">Update Your rating</a>
+					</div>
+				</div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+				<div class="header_section_two">
+					<div class="header_item headerButton"><a href="check_in.html"><img src="assets/img/header/settings-gears.png" alt=""></a></div>
+					<div class="header_item headerButton"><img src="assets/img/header/logout.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="siteBody">
+			<div>
+				<div class="menu">
+					<div id="home"><img src="assets/img/music/home.png" alt="">Моя сторінка</div>
+					<div id="news"><img src="assets/img/music/news.png" alt="">Новини</div>
+					<div id="message"><img src="assets/img/music/message.png" alt="">Повідомлення</div>
+					<div id="friens"><img src="assets/img/music/friends.png" alt="">Друзі</div>
+					<div id="band"><img src="assets/img/music/groups.png" alt="">Грути</div>
+					<div id="foto"><img src="assets/img/music/photos.png" alt="">Фотографії</div>
+					<div id="music"><img src="assets/img/music/music.png" alt="">Музика</div>
+					<div id="video"><img src="assets/img/music/videos.png" alt="">Відео</div>
+				</div>
+				<div class="musicBlock">
+					<div class="curentMusic">
+						<img id="play" src="assets/img/music/play.png" alt="">
+						
+						<div id="next_previous">
+							<img src="assets/img/music/previous-track.png" alt="">
+							
+							<img src="assets/img/music/next-track.png" alt="">
+						</div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+						<div class="about_current_music">
+							<img src="https://pp.userapi.com/c837231/v837231984/5ba6a/v8YDnR6V7TA.jpg" alt="">
+							<div>
+								<p id="current_music_title">The Void</p>
+								<p id="current_music_executor">Nine Lashes</p>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+							</div>
+
+						</div>
+					
+					</div>
+					<div class="fullListMusic">
+						<div class="category">
+							<p>Моя Музика</p>
+							<p>Плейлисти</p>
+						</div>
+						<hr>
+						<div class="showlist">
+							
+							<div class="search">
+								<input type="text" 
+							 		id="audio_search" 
+									placeholder="Пошук за музикою">
+								<button class="button_search">
+								</button>
+							</div>
+							<div class="about_list">				
+								<p>Аудіозаписи</p>
+								<p>за замовчуванням</p>
+							</div>
+							<div id="list_music">
+								<!-- <div>
+									<div>
+										<img src="https://pp.userapi.com/c840424/v840424422/55939/_BqJnumm1NM.jpg" alt="">
+										<div class="list_music_inf">
+											<span>Stranger Things</span>
+											<span>Kygo  feat. OneRepublic</span>
+										</div>
+									</div>
+									<div class="list_music_time">
+										2:58
+									</div>
+								</div>
+
+								<div>
+									<div>
+										<img src="https://pp.userapi.com/c636816/v636816452/7517a/ksYp012gDwM.jpg" alt="">
+										<div class="list_music_inf">
+											<span>Take My Hand</span>
+											<span>Simple Plan</span>
+										</div>
+									</div>
+									<div class="list_music_time">
+										3:51
+									</div>
+								</div>
+
+
+								<div>
+									<div>
+										<img src="https://pp.userapi.com/c636816/v636816452/66e65/7-iDZ9DvGhA.jpg" alt="">
+										<div class="list_music_inf">
+											<span>My Name [Wearing Me Out]</span>
+											<span>Shinedown</span>
+										</div>
+									</div>
+									<div class="list_music_time">
+										3:36
+									</div>
+								</div>
+
+								<div>
+									<div>
+										<img src="assets/img/music/default_music_img.png" alt="">
+										<div class="list_music_inf">
+											<span>Warrior Inside</span>
+											<span>Leader</span>
+										</div>
+									</div>
+									<div class="list_music_time">
+										3:15
+									</div>
+								</div> -->
+
+
+									
+							</div>	
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
 </html>
