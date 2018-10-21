@@ -30,12 +30,25 @@ img{
 	flex-direction: column;
 }
 
+.list_music_inf > span:nth-child(2) {
+	color: #a5a5a5;
+}
+
 .list_music_time{
+	align-content: center;
 	position: relative;
 	top: 15px;
 }
 
 .root:hover{
-    background: #d4d4d4;
+    background: #d3d3d3;
 }
+
+.list_music_time img{
+	margin-left: 15px;
+	width: 15px;
+	height: 15px;
+}
+
+
 

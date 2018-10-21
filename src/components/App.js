@@ -7,6 +7,7 @@ import {musics} from './DB'
 class App extends Component {
   render() {
     return (
+    	
    		<MusicList listElements={musics}/>
     );
  
