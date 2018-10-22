@@ -12,9 +12,11 @@ class MusicList extends Component{
 		</li> )
 
 		return(
-			<ul>
-				{musicElements}
-			</ul>
+			<div id="list_music">
+				<ul>
+					{musicElements}
+				</ul>
+			</div>
 			);
 		}
 	}

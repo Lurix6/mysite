@@ -194,14 +194,11 @@ body, p{
 .category p {
 	margin: 0 5px;
  	padding: 15px;
+ 	cursor: pointer;
 }
 
-.category p:first-child {
- 	border-bottom: 2px solid #00AEB5;
-}
-.category p:hover {
- 	border-bottom: 2px solid #b3b4b5;
-}
+
+
 
 hr {
 	width: 400px;
