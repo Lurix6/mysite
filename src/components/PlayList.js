@@ -3,11 +3,11 @@ import React from 'react';
 class PlayList extends React.Component{
 
 	render(){
-		
+
 
 		return(
 			<div id="playList">
-				<h3>Hi i'm play list </h3>
+				<h3>Hi im playlist </h3>
 			</div>
 			);
 		}

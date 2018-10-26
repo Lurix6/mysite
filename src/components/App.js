@@ -4,30 +4,39 @@ import {musics} from './DB'
 import CurentMusic from './CurentMusic'
 import Category from './Category'
 import AboutList from './AboutList'
-import MusicList from './MusicList' 
+import MusicList from './MusicList'
 import PlayList from'./PlayList'
+
+
 
 
 class App extends Component {
 
 	state = {
-		curentCategoryMyMusic : true
+		curentCategoryMyMusic : true,
+		curentMusicId: '56c782f1a2c2c3268ddb3206'
 	}
 
 	updateCurentCategory = (value) => {
 		this.setState({
 			curentCategoryMyMusic : value
 		})
-		console.log("value - " ,value, "  state", this.state.curentCategoryMyMusic);
 
-	}	
+	}
+
+	updateCurentMusicId = (value) => {
+		this.setState({
+			curentMusicId : value
+		})
+		console.log("value - " ,value, "  state", this.state.curentMusicId);
+
+	}
 
   render() {
 
     return (
         <div className ="musicBlock">
-            <CurentMusic curentMusic = {musics[5]} />
-
+            <CurentMusic curentMusicId = {this.state.curentMusicId} musics={musics} />
             <div className="fullListMusic">
               <Category updateCurentCategory={this.updateCurentCategory} defaultCurentCategory ={this.curentCategoryMyMusic} />
               <hr />
@@ -40,7 +49,7 @@ class App extends Component {
                   </button>
                 </div>
 	               <AboutList categoryMusic={this.state.curentCategoryMyMusic}/>
-	               {this.state.curentCategoryMyMusic ?  <MusicList listElements={musics}/>  : <PlayList />}
+	               {this.state.curentCategoryMyMusic ?  <MusicList listElements={musics} setNewMusicId ={this.updateCurentMusicId} /> : <PlayList />}
 
               </div>
             </div>

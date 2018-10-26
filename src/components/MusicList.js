@@ -4,9 +4,13 @@ import './style/MusicList.css'
 
 class MusicList extends Component{
 
+	selectMusic = () => {
+		console.log("SELECT MUSIC");
+	}
+
 	render(){
-		const musicElements = this.props.listElements.map(element => <li key={element.id}>
-			<MusicElement 
+		const musicElements = this.props.listElements.map(element => <li onClick={() => {this.props.setNewMusicId(element.id) }} key={element.id}>
+			<MusicElement
 				element = {element}
 			/>
 		</li> )
